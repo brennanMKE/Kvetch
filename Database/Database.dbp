@@ -1,0 +1,25 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "Database"
+   MSDTVersion = "80"
+   DefDBRef = "virtual1\sqlexpress.Kvetch.dbo"
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "virtual1\sqlexpress.Kvetch.dbo"
+         ConnectStr = "Data Source=.\SQLEXPRESS;Initial Catalog=Kvetch;Integrated Security=True"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+      Begin DBRefNode = "virtual1\sqlexpress.Kvetch.dbo1"
+         ConnectStr = "Data Source=.\SQLEXPRESS;Initial Catalog=Kvetch;User ID=kvetch"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+   End
+   Begin Folder = "Populate"
+      Script = "Populate Comments.sql"
+      Script = "Populate Topics.sql"
+   End
+   Begin Folder = "Tables"
+      Script = "Comments.sql"
+      Script = "Topics.sql"
+   End
+End

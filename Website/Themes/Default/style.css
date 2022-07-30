@@ -1,0 +1,167 @@
+﻿body#Default
+{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-size: 12px;
+	color: #fff;
+	background: #000;
+}
+
+div#Main
+{
+	margin: 0;
+	padding: 0;
+	width: 450px;
+	height: 350px;
+	border: 1px solid #ddd;
+	position: relative;
+	top: 3px;
+	left: 3px;
+	background: #333;
+}
+
+div.TopicSelector
+{
+	padding: 0;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 100px;
+	height: 200px;
+}
+
+div.CommentRotator
+{
+	padding: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 350px;
+	height: 200px;
+}
+
+div.CommentEntry
+{
+	padding: 0;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 450px;
+	height: 150px;
+	background: #555;
+}
+
+div.TopicSelector div,
+div.CommentRotator div,
+div.CommentEntry div
+{
+	padding: 3px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+div.TopicSelector div.Topics span.Topic
+{
+	display: block;
+	padding: 5px 5px 5px 10px;
+	margin: 2px;
+	width: 76px;
+	height: 20px;
+	background: #4284ff;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+}
+
+div.TopicSelector div.Topics span.Topic:hover
+{
+	background: #6da0ff;
+	cursor: pointer;
+}
+
+div.TopicSelector div.Topics span.Selected
+{
+	background: #aacbff;
+}
+
+div.TopicSelector div.Topics span.Selected:hover
+{
+	background: #aacbff;
+}
+
+div.CommentEntry table
+{
+	margin-top: 15px;
+}
+
+div.CommentEntry table tr td.Label
+{
+	padding: 5px;
+	margin: 2px;
+	text-align: right;
+	width: 90px;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+div.CommentEntry table tr td.Name input[type="text"],
+div.CommentEntry table tr td.Comment  textarea
+{
+	width: 280px;
+}
+
+div.CommentEntry table tr td.Submit
+{
+	vertical-align: middle;
+	text-align: right;
+}
+
+div.CommentEntry table tr td.Submit input[type="button"]
+{
+	width: 150px;
+	height: 30px;
+	background: #4284ff;
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+	border: 1px solid white;
+}
+
+div.CommentEntry table tr td.Submit input[type="button"]:hover
+{
+	color: red;
+}
+
+div#Error
+{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 3px;
+	color: #ddd;
+	background: #900;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+div.Status
+{
+	padding: 5px 0 0 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+
+div.CommentRotator div.Comment div.Text
+{
+	margin: 5px;
+	padding: 3px;
+}
+
+div.CommentRotator div.Comment div.Author
+{
+	padding-left: 15px;
+}

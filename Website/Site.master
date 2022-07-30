@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ScriptManager ID="sm1" runat="server" LoadScriptsBeforeUI="true">
+            <Services>
+                <asp:ServiceReference Path="~/Services/Comment.asmx" />
+                <asp:ServiceReference Path="~/Services/Topic.asmx" />
+                <%--<asp:ServiceReference Path="~/Services/Comment.svc" />
+                <asp:ServiceReference Path="~/Services/Topic.svc" />--%>
+            </Services>
+        </asp:ScriptManager>
+        <asp:ContentPlaceHolder id="content" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

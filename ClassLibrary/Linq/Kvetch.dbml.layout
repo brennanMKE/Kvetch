@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Kvetch">
+  <DataContextMoniker Name="/KvetchDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e73176c1-299b-41ee-a581-6a681bb2d9e8" absoluteBounds="5, 2.125, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/KvetchDataContext/Topic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59157bf8-16f3-4537-9566-d690e486f4ff" absoluteBounds="5.015, 2.585, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7d2d7a8-6edb-4cd7-92df-6c6bdaadda8c" absoluteBounds="2.5, 2, 2, 1.75354248046875">
+      <DataClassMoniker Name="/KvetchDataContext/Comment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4af9c038-000c-41cd-9556-80724669f759" absoluteBounds="2.515, 2.46, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5 : 2.83742390950521); (4.5 : 2.83742390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KvetchDataContext/Topic/Topic_Comment" />
+      <nodes>
+        <classShapeMoniker Id="e73176c1-299b-41ee-a581-6a681bb2d9e8" />
+        <classShapeMoniker Id="f7d2d7a8-6edb-4cd7-92df-6c6bdaadda8c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
